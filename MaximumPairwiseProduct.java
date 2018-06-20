@@ -15,19 +15,18 @@ public class MaximumPairwiseProduct {
                 largestValue = valuesArray[i];
             }
         }
-        System.out.println(largestValue);
 
+        System.out.println(largestValue);
 
         for (int j = 0; j < valuesArrayLength; j++) {
             if (valuesArray[j] != largestValue && valuesArray[j] > secondLargestValue) {
                 secondLargestValue = valuesArray[j];
             }
         }
+
         System.out.println(secondLargestValue);
 
-
         return largestValue * secondLargestValue;
-
     }
 
     public static void main(String[] args) {
@@ -38,12 +37,12 @@ public class MaximumPairwiseProduct {
             System.out.println("Nice try there wiseguy.");
 
         }
+        
         int[] valuesArray = new int[n];
         for (int i = 0; i < valuesArray.length; i++) {
             valuesArray[i] = scanner.nextInt();
         }
 
         System.out.println(getHighestValuesProduct(valuesArray));
-
     }
 }

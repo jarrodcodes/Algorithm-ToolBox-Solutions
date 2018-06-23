@@ -1,7 +1,7 @@
 import java.math.BigInteger;
 import java.util.Scanner;
 
-public class Algorithm {
+public class FibonacciFast {
     private static BigInteger calc_fib(int n) {
         if (n <= 1)
             return BigInteger.valueOf(n);

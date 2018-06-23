@@ -19,7 +19,7 @@ public class MaximumPairwiseProduct {
         System.out.println(largestValue);
 
         for (int j = 0; j < valuesArrayLength; j++) {
-            if (valuesArray[j] != largestValue && valuesArray[j] > secondLargestValue) {
+            if (j != largestValue && valuesArray[j] > secondLargestValue) {
                 secondLargestValue = valuesArray[j];
             }
         }

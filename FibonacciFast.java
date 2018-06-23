@@ -1,17 +1,18 @@
+import java.math.BigInteger;
 import java.util.Scanner;
 
-public class FibonacciFast {
-    private static long calc_fib(int n) {
+public class Algorithm {
+    private static BigInteger calc_fib(int n) {
         if (n <= 1)
-            return n;
+            return BigInteger.valueOf(n);
 
-        int[] prevCalcs = new int[n + 2];
+        BigInteger[] prevCalcs = new BigInteger[n + 2];
 
-        prevCalcs[0] = 0;
-        prevCalcs[1] = 1;
+        prevCalcs[0] = BigInteger.valueOf(0);
+        prevCalcs[1] = BigInteger.valueOf(1);
 
-        for (int i = 2; i < n + 2; i++) {
-           prevCalcs[i] = prevCalcs[i-1] + prevCalcs[i-2];
+        for (int i = 2; i < n + 1; i++) {
+            prevCalcs[i] = prevCalcs[i - 1].add(prevCalcs[i - 2]);
         }
 
         return prevCalcs[n];

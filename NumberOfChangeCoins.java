@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class NumberOfChangeCoins {
 
-    private static long calc_fib(int n) {
+    private static long numCoins(int n) {
 
         long numQuarters = 0;
         long numDimes = 0;
@@ -32,6 +32,6 @@ public class NumberOfChangeCoins {
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
-        System.out.println(calc_fib(n));
+        System.out.println(numCoins(n));
     }
 }

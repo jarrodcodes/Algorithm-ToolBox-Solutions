@@ -2,7 +2,7 @@ import java.math.BigInteger;
 import java.util.Scanner;
 
 public class LastDigitOfFibonacciSum {
-    private static int calc_fib(int n) {
+    private static int calc_fib_sum_last_digit(int n) {
         if (n <= 1)
             return BigInteger.valueOf(n).intValue();
         n = n+2;
@@ -22,6 +22,6 @@ public class LastDigitOfFibonacciSum {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
 
-        System.out.println(calc_fib(n));
+        System.out.println(calc_fib_sum_last_digit(n));
     }
 }

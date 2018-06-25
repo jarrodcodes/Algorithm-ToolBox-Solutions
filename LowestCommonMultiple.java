@@ -9,7 +9,7 @@ public class LowestCommonMultiple {
         return gcd(b % a, a);
     }
 
-    private static long calc_fib(long n, long m) {
+    private static long calc_LCM(long n, long m) {
 
         BigInteger gcd = BigInteger.valueOf(n).gcd(BigInteger.valueOf(m));
 
